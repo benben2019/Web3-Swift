@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Web3-Swift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Web3-Swift.'
+  s.summary          = 'A pure swift Ethereum Web3 library'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A pure swift Ethereum Web3 library. Refer to https://github.com/Boilertalk/Web3.swift
                        DESC
 
   s.homepage         = 'https://github.com/benben/Web3-Swift'
@@ -26,17 +26,16 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'benben' => 'hzcly98@gmail.com' }
   s.source           = { :git => 'https://github.com/benben/Web3-Swift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.swift_version    = "5.0"
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'Web3-Swift/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Web3-Swift' => ['Web3-Swift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'BigInt', '~> 5.0.0'
+  s.dependency 'CryptoSwift', '~> 1.0.0'
+  s.dependency 'secp256k1.swift', '~> 0.1.1'
+  s.dependency 'PromiseKit', '~> 6.0.0'
+  
+  
 end
