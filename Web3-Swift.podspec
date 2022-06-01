@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'benben' => 'hzcly98@gmail.com' }
-  s.source           = { :git => 'https://github.com/benben/Web3-Swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/benben2019/Web3-Swift.git', :tag => s.version.to_s }
   s.swift_version    = "5.0"
 
   s.ios.deployment_target = '9.0'
