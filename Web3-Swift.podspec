@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   A pure swift Ethereum Web3 library. Refer to https://github.com/Boilertalk/Web3.swift
                        DESC
 
-  s.homepage         = 'https://github.com/benben/Web3-Swift'
+  s.homepage         = 'https://github.com/benben2019/Web3-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'benben' => 'hzcly98@gmail.com' }
