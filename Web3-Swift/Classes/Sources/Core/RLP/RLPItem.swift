@@ -148,7 +148,7 @@ public extension RLPItem {
         guard case .bytes(let value) = valueType else {
             return nil
         }
-        return BigUInt(value)
+        return BigUInt(bytes: value)
     }
 
     /**

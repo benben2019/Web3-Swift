@@ -26,6 +26,37 @@ class Web3_SwiftTest: XCTestCase {
         }
     }
     
+    func testUIntBytesRepresentable() {
+        let zero = UInt(0).makeBytes()
+        XCTAssertEqual(zero.count, MemoryLayout<UInt>.size)
+        
+        for i in 0 ..< MemoryLayout<UInt>.size {
+            XCTAssertEqual(zero[i], 0x00)
+        }
+        
+        let max = UInt.max.makeBytes()
+        XCTAssertEqual(max.count, MemoryLayout<UInt>.size)
+        
+        for i in 0 ..< MemoryLayout<UInt>.size {
+            XCTAssertEqual(max[i], 0xff)
+        }
+        
+        let two = UInt(1024).makeBytes()
+        XCTAssertEqual(two.count, MemoryLayout<UInt>.size)
+        
+        for i in 0 ..< MemoryLayout<UInt>.size - 2 {
+            XCTAssertEqual(two[i], 0x00)
+        }
+        XCTAssertEqual(two[MemoryLayout<UInt>.size - 2], 0x04)
+        XCTAssertEqual(two[MemoryLayout<UInt>.size - 1], 0x00)
+        
+        
+//        let bytes = "1024".makeBytes()
+//        let data = Data(bytes)
+//        let bts = data.makeBytes()
+        
+    }
+    
 }
 
 extension Int {

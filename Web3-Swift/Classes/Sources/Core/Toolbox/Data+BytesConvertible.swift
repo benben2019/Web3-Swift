@@ -18,4 +18,8 @@ extension Data: BytesConvertible {
     public func makeBytes() -> Bytes {
         return Bytes(self)
     }
+    
+    public init(bytes: Bytes) {
+        self = Data(bytes)
+    }
 }
