@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Web3-Swift'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A pure swift Ethereum Web3 library'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Web3-Swift/Classes/**/*'
   
   s.dependency 'BigInt', '~> 5.0.0'
-  s.dependency 'CryptoSwift', '~> 1.0.0'
+  s.dependency 'CryptoSwift', '~> 1.5'
   s.dependency 'secp256k1.swift', '~> 0.1.1'
   s.dependency 'PromiseKit', '~> 6.0.0'
   
