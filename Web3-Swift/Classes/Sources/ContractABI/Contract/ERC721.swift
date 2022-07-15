@@ -26,7 +26,7 @@ public protocol ERC721Contract: ERC165Contract {
 public protocol AnnotatedERC721: EthereumContract {
     func name() -> SolidityInvocation
     func symbol() -> SolidityInvocation
-    func tokenURI() -> SolidityInvocation
+    func tokenURI(tokenId: BigUInt) -> SolidityInvocation
 }
 
 /// ERC721 Enumeration Extension

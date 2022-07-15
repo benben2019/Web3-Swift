@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Web3-Swift'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'A pure swift Ethereum Web3 library'
 
 # This description is used to generate tags and improve search results.
